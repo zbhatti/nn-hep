@@ -1,0 +1,138 @@
+
+<head>
+    <title>Process results</title>
+    <script type="text/javascript" src="../sortable.js"></script>
+    <link rel=stylesheet href="../mgstyle.css" type="text/css">
+</head>
+<body>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+        if ( ! UrlExists(alt)){
+         obj.href = alt;
+         return true;
+        }
+       obj.href = alt;
+       return false;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>
+  
+
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 4.4393e+06 &#177 1.22e+04 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right><a href=../../SubProcesses/P0_gg_qq/diagrams.html>P0_gg_qq</a></td>
+    <td align=right><a id="#P0_gg_qq" href=#P0_gg_qq onClick="check_link('#P0_gg_qq','#P0_gg_qq','#P0_gg_qq')"> 2.889e+06 </a> </td>
+    <td align=right>  8.71e+03</td>
+    <td align=right>  112008.0</td>
+    <td align=right>  8670.0</td>
+    <td align=right>  0</td>
+</tr>
+
+<tr><td align=right><a href=../../SubProcesses/P0_qq_qq/diagrams.html>P0_qq_qq</a></td>
+    <td align=right><a id="#P0_qq_qq" href=#P0_qq_qq onClick="check_link('#P0_qq_qq','#P0_qq_qq','#P0_qq_qq')"> 1.551e+06 </a> </td>
+    <td align=right>  8.48e+03</td>
+    <td align=right>  63005.0</td>
+    <td align=right>  5219.0</td>
+    <td align=right>  0</td>
+</tr>
+
+<tr><td align=right>P0 sum</td>
+    <td align=right><a id="./results.html" href=./results.html onClick="check_link('./results.html','','./results.html')"> 4439304.0 </a> </td>
+    <td align=right>  </td>
+    <td align=right>  </td>
+    <td align=right>  </td>
+    <td align=right>  </td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ <dl>  
+<dt><a  name=P0_gg_qq href=../../SubProcesses/P0_gg_qq/diagrams.html>P0_gg_qq</a></dt><dd>
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 2.8886e+06 &#177 8.71e+03 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="../../SubProcesses/P0_gg_qq/G1/run_01_log.txt" href=../../SubProcesses/P0_gg_qq/G1/run_01_log.txt onClick="check_link('../../SubProcesses/P0_gg_qq/G1/run_01_log.txt','../../SubProcesses/P0_gg_qq/G1/log.txt','../../SubProcesses/P0_gg_qq/G1/run_01_log.txt')"> 0 </a> </td>
+    <td align=right>  0</td>
+    <td align=right>  0.0</td>
+    <td align=right>  1.0</td>
+    <td align=right>  0</td>
+</tr>
+
+<tr><td align=right>G2</td>
+    <td align=right><a id="../../SubProcesses/P0_gg_qq/G2/run_01_log.txt" href=../../SubProcesses/P0_gg_qq/G2/run_01_log.txt onClick="check_link('../../SubProcesses/P0_gg_qq/G2/run_01_log.txt','../../SubProcesses/P0_gg_qq/G2/log.txt','../../SubProcesses/P0_gg_qq/G2/run_01_log.txt')"> 2.889e+06 </a> </td>
+    <td align=right>  8.71e+03</td>
+    <td align=right>  112008.0</td>
+    <td align=right>  8669.0</td>
+    <td align=right>  0.003</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+  
+<dt><a  name=P0_qq_qq href=../../SubProcesses/P0_qq_qq/diagrams.html>P0_qq_qq</a></dt><dd>
+ <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>s= 1.5507e+06 &#177 8.48e+03 (pb)</b><br><br>
+<table class="sortable" id='tablesort'>
+<tr><th>Graph</th>
+    <th> Cross-Section</th>
+    <th>Error</th>
+    <th>Events (K)</th>
+    <th>Unwgt</th>
+    <th>Luminosity</th>
+</tr>
+
+<tr><td align=right>G1</td>
+    <td align=right><a id="../../SubProcesses/P0_qq_qq/G1/run_01_log.txt" href=../../SubProcesses/P0_qq_qq/G1/run_01_log.txt onClick="check_link('../../SubProcesses/P0_qq_qq/G1/run_01_log.txt','../../SubProcesses/P0_qq_qq/G1/log.txt','../../SubProcesses/P0_qq_qq/G1/run_01_log.txt')"> 6.83e+04 </a> </td>
+    <td align=right>  818</td>
+    <td align=right>  7001.0</td>
+    <td align=right>  785.0</td>
+    <td align=right>  0.0115</td>
+</tr>
+
+<tr><td align=right>G2</td>
+    <td align=right><a id="../../SubProcesses/P0_qq_qq/G2/run_01_log.txt" href=../../SubProcesses/P0_qq_qq/G2/run_01_log.txt onClick="check_link('../../SubProcesses/P0_qq_qq/G2/run_01_log.txt','../../SubProcesses/P0_qq_qq/G2/log.txt','../../SubProcesses/P0_qq_qq/G2/run_01_log.txt')"> 1.482e+06 </a> </td>
+    <td align=right>  8.44e+03</td>
+    <td align=right>  56004.0</td>
+    <td align=right>  4434.0</td>
+    <td align=right>  0.00299</td>
+</tr>
+
+</table>
+</center>
+<br><br><br>
+ </dl></body>
